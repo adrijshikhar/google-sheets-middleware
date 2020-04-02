@@ -3,6 +3,16 @@
   "plugins": [
     "@typescript-eslint"
   ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "rules": {
     "semi": [
       "error",
@@ -11,6 +21,7 @@
     "quotes": [
       2,
       "single"
-    ]
+    ],
+    "no-console":"warn"
   }
 }
